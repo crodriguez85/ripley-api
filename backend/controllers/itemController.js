@@ -6,7 +6,7 @@ exports.getItems = (req, res ) => {
     fetch(url)
     .then((response)=> response.json())
     .then(data => {
-        var items = data.slice(0,4);
+        var items = data
         items = items.map((item) => {
             return {
                 uniqueID: item.uniqueID,
