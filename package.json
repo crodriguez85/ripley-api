@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/app.js",
-    "server": "nodemon backend/app.js",
-    "client": "cd frontend && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node backend/app.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run frontend\"",
+    "client": "cd frontend && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Cristian Rodriguez",
   "license": "ISC",
@@ -17,7 +20,6 @@
     "concurrently": "^4.1.1",
     "cookie-parser": "^1.4.4",
     "express": "^4.17.1",
-    "if-env": "^1.0.4",
     "node-fetch": "^2.6.0",
     "redis": "^2.8.0"
   },
