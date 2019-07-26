@@ -1,5 +1,4 @@
 const express = require('express');
-const port = process.env.PORT || 8000;
 const routes = require('./routes/apiRoutes');
 const cookieParser = require('cookie-parser');
 
@@ -34,6 +33,8 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"))
   })
 } 
+
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
     console.log(`server listening on localhost:${port}/items`)

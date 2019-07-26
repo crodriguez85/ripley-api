@@ -15,7 +15,7 @@ export default class Items extends Component {
         if (Math.random(0, 1) < 0.1) {
             alert('Hubo un Error en la consulta vuelve a tratar')
         } else {
-            axios.get('http://localhost:8000/items')
+            axios.get('/items')
             .then((res) => {
                 this.setState({
                     items: res.data.items,

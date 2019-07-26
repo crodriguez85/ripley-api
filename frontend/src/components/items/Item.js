@@ -14,7 +14,7 @@ export default class Item extends Component {
             alert('Hubo un Error en la consulta vuelve a tratar')
         } else {
         const {uniqueID} = this.props.match.params
-        axios.get(`http://localhost:8000/items/${uniqueID}`)
+        axios.get(`/items/${uniqueID}`)
         .then((res) => {
             this.setState({
                 item: res.data
