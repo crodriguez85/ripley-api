@@ -10,6 +10,9 @@
 }
 
 /* Card */
+.a-card {
+  margin-left: 100px;
+}
 img.card-img-top.img-list {
   width: 280px;
 }

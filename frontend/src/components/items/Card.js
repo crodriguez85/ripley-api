@@ -7,7 +7,7 @@ export default class Card extends Component {
     render() {
             const {name, offerPrice, listPrice, discount, picture, marca, uniqueID  } = this.props.item
         return (
-          <Link to={`/details/${uniqueID}`}>
+          <Link className="a-card" to={`/details/${uniqueID}`}>
             <div className="card mb-2">
               <div className="img-container p-5">
                   <div className="char-description mb-0 discount text-right">

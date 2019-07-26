@@ -32,7 +32,7 @@ export default class Items extends Component {
 
         return (
             <div className="py-5 back-color">
-            <div className="container">
+            <div className="container d-flex justify-content-space-around">
               <div className="row">
                 {items.map(item => <Card
                   key={item.id}
