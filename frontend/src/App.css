@@ -1,0 +1,181 @@
+/* Header */
+.navbar{
+  background-color: black
+}
+.titulo-test {
+  color: white !important;
+}
+.navbar-brand{
+  border-radius: 50%
+}
+
+/* Card */
+img.card-img-top.img-list {
+  width: 280px;
+}
+
+.card.mb-2 {
+  border: none;
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+  background-color: white;
+  border: none
+}
+
+.title{
+  color: #6a6a6a !important;
+}
+.name{
+  color: #6a6a6a !important;
+}
+.listprice {
+  color: #6a6a6a;
+  text-decoration: line-through;
+}
+.offerprice {
+  color: #6a6a6a;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.char-description.mb-0.discount.text-right {
+  padding-bottom: 12px;
+  margin-bottom: 13px;
+}
+
+b.discount-text {
+  font-size: 25px;
+  background-color: #e75353;
+  padding: 10px;
+  border-radius: 5px;
+  color: white
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+/* End of Card List */
+
+/* Detail */
+.py-5.back-color {
+  width: 70%;
+  margin: 0 auto
+}
+
+.container-detail {
+  display: flex;
+  width: 100%
+}
+
+.detail-list{
+  list-style: none;
+}
+
+.detail-marca {
+  height: 18px;
+  background-size: auto 18px;
+  background-repeat: no-repeat;
+  color: #535151;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.detail-name{
+  height: 18px;
+  background-size: auto 18px;
+  background-repeat: no-repeat;
+  color: #535151;
+  font-weight: 900;
+  font-size: 24px;
+  width: 500px;
+}
+
+.detail-sku {
+  color: #999;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.span-normal {
+  font-size: 24px;
+  color: #999;
+}
+.span-internet {
+  font-size: 22px;
+  color: #999;
+  font-weight: 900
+}
+
+.span-tarjeta {
+  font-size: 24px;
+  color: #e75353;
+}
+
+.span-descuento {
+  font-size: 24px;
+  color: #999;
+  font-weight: 900
+}
+
+.span-acumulas {
+  font-size: 24px;
+  color: #999;
+}
+
+.span-discount {
+    text-align: center;
+    background: #e75353;
+    top: 5px;
+    right: 5px;
+    margin: 0;
+    padding: 5px 5px 4px 0;
+    color: #fff;
+    font-size: 14px;
+    min-width: 40px;
+    z-index: 2;
+}
+
+.span-fullPrice {
+    text-align: right!important;
+    float: right;
+    font-size: 24px;
+    color: #999;
+}
+.span-offer {
+    text-align: right!important;
+    float: right;
+    font-size: 24px;
+    color: #999;
+    font-weight: 500
+}
+
+.span-ripleyOffer {
+    text-align: right!important;
+    float: right;
+    font-size: 24px;
+    color: #e75353;
+}
+.span-discount {
+  text-align: right!important;
+  float: right;
+  font-size: 24px;
+  background-color: #e75353;
+  color: white;
+  border-radius: 9px;
+  padding: 10px;
+}
+
+.span-puntos {
+    text-align: right!important;
+    float: right;
+    font-size: 24px;
+    color: #999;
+}
+
+.detail {
+  padding-bottom: 33px
+}
