@@ -9,8 +9,7 @@ cd frontend && npm install
 
 ## Start Root
 ```
-npm run server
-npm run client
+npm run dev
 ```
 
 ## Heroku Deploy
