@@ -70,8 +70,9 @@ a:hover{
   width: 100%
 }
 
-.detail-list{
+.detail-list {
   list-style: none;
+  width: 400px;
 }
 
 .detail-marca {
